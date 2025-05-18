@@ -74,6 +74,7 @@ public class MainTest {
     @DisplayName("Hamburger sınıfı addAddition methodları doğru çalışıyor mu?")
     @Test
     public void testHamburgerAddAdditionMethods() throws NoSuchFieldException {
+        Hamburger hamburger = new Hamburger("Basic", "null", 13.0, "WRAP");
         hamburger.addHamburgerAddition1("test", 3);
         hamburger.addHamburgerAddition2("test", 3);
         hamburger.addHamburgerAddition3("test", 3);
@@ -85,8 +86,8 @@ public class MainTest {
     @DisplayName("Deluxe Burger sınıf değişkenleri doğru değerlere sahip mi?")
     @Test
     public void testDeluxeBurgerInstanceVariables() throws NoSuchFieldException {
-        assertEquals(deluxeBurger.getCips(), "CURVY");
-        assertEquals(deluxeBurger.getDrink(), "COKE");
+        assertEquals(deluxeBurger.getCips(), "Curvy");
+        assertEquals(deluxeBurger.getDrink(), "Coke");
     }
 
     @DisplayName("Deluxe Burger sınıfı addAddition methodları doğru çalışıyor mu?")
